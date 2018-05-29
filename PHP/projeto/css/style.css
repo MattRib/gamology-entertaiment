@@ -1,0 +1,412 @@
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.conteudo {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    background: black;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #fed801 3px solid;
+    padding: 25px;
+}
+
+header a {
+    color: #ffffff;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header #branding a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #fed801;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+
+#showcase {
+    min-height: 400px;
+    background: url('../img/headerbg.jpg') no-repeat center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* flexbox style*/
+
+#ct_principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ct_item {
+    flex: 0 1 auto;
+    width: 570px;
+    -webkit-box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0, 24);
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.ct_item h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #feb401;
+    text-decoration: underline;
+}
+
+.ct_item p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#ct_aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.item_aside {
+    flex: 0 1 auto;
+    height: 275px;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.item_aside h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #feb401;
+    text-decoration: underline;
+}
+
+.item_aside p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#ct_produtos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.item_produtos {
+    flex: 0 1 auto;
+    height: 400px;
+    width: 250px;
+    color: black;
+    -webkit-box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0, 24);
+    margin: 5px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.item_produtos:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.torneio {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.torneio h4 {
+    text-transform: uppercase;
+    color: #feb401;
+    text-decoration: underline;
+    margin-top: 25px;
+}
+
+.cadastro {
+    margin-top: 20px;
+}
+
+.cadastro button {
+    margin-top: 10px;
+}
+
+.cadastro h4 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #feb401;
+    text-decoration: underline;
+    margin-top: 25px;
+}
+
+/* Newsletter */
+
+.home-newsletter {
+    padding: 20px 0;
+}
+
+.home-newsletter .single {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.home-newsletter .single h2 {
+    font-size: 22px;
+    color: #feb401;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.home-newsletter .single .form-control {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-color: #17a2b8;
+    border-radius: 20px 0 0 20px;
+}
+
+.home-newsletter .single .form-control:focus {
+    box-shadow: none;
+}
+
+.home-newsletter .single .btn {
+    min-height: 50px;
+    border-radius: 0 20px 20px 0;
+    background: #17a2b8;
+    color: #fff;
+}
+
+.home-newsletter .single .btn:hover {
+    color: white
+}
+
+.btn-primary {
+    height: 45px;
+    padding: 0 20px 20px 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.limpar {
+
+}
+
+#boxes {
+    margin-top: 10px;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.box p {
+    font-size: 40px;
+}
+
+footer {
+    background: #343a40;
+}
+
+main h1 {
+    color: #feb401;
+}
+
+@media(max-width: 992px) {
+    header #branding, header nav, header nav li, #boxes .box, article#main-col, aside#sidebar, section .ct_item, section .item_produtos, section .item_produtos, section .item_aside, .torneio, .cadastro, .ct_login, footer,.jumbotron-fluid {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    #showcase h1 {
+        margin-top: 40px;
+        text-align: center;
+    }
+    #showcase p {
+        text-align: center;
+    }
+    #showcase button {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .btn-outline-success {
+        width: 100%;
+        display: block;
+    }
+    .btn-outline-primary {
+        width: 100%;
+        display: block;
+    }
+    .btn-outline-warning {
+        width: 100%;
+        display: block;
+    }
+    .torneio button {
+        width: 100%;
+        display: block;
+    }
+    .limpar {
+        margin-top: 5px;
+    }
+    .voltar {
+        text-align: center;
+    }
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#btn {
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.buttonincricao {
+    border-radius: 4px;
+    background-color: #fed801;
+    border: none;
+    color: blue;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.buttonincricao span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonincricao span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonincricao:hover span {
+    padding-right: 25px;
+}
+
+.buttonincricao:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.jumbotron-fluid {
+    background: url('../img/img1.jpg') no-repeat center;
+    color: #fff;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+}
